@@ -26,6 +26,7 @@ export const PortfolioProvider = (props:Props) => {
            <BrowserRouter>
            <Header/>
            <Routes>
+           <Route path="/create" element={<Home/>} />
            <Route path="/" element={<Home/>} />
            </Routes>
            </BrowserRouter>
