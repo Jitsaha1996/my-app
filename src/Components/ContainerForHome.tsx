@@ -1,0 +1,114 @@
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import { Chip, Typography } from '@mui/material';
+import { padding } from '@mui/system';
+import SimpleAccordion from './SimpleAccordian';
+import AttachEmailIcon from '@mui/icons-material/AttachEmail';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GoogleIcon from '@mui/icons-material/Google';
+import BottomAppBar from './Footer';
+
+
+export default function ContainerForHome() {
+  return (
+    <React.Fragment>
+
+      <CssBaseline />
+      <Container maxWidth="lg" sx={{ backgroundImage: "linear-gradient(to bottom right, red, yellow)" }} >
+        <Box sx={{ backgroundImage: "linear-gradient(to bottom right, red, yellow)", marginTop: "5px", display: "flex", flexDirection: "row" }} >
+          <Box sx={{ display: "flex", flexDirection: "column", width: "50%", paddingTop: "40px" }}>
+            <Box sx={{ padding: "25px", }}>
+              <Typography sx={{ fontSize: "2rem", color: "white" }}>
+                Hey , I'am  Jit Saha</Typography>
+            </Box>
+            <Box sx={{ padding: "25px", height: "57%" }}>
+              <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif" }}>
+                Full Stack Developer from India ,Working in TCS .
+                Using React js in Front End and Node js in BackEnd</Typography>
+                <Box sx={{display: "flex", flexDirection: "row",justifyContent:"center ",alignItems:"center",gap:"5px",paddingTop:"20px"}} >
+                <AttachEmailIcon sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}/>
+                <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}>
+                
+                <a href="mailto:sahajit1996@gmail.com" target="_blank">sahajit1996@gmail.com</a></Typography>
+                </Box>
+                <Box sx={{display: "flex", flexDirection: "row",justifyContent:"center ",alignItems:"center",gap:"5px",paddingTop:"20px"}} >
+                <LocalPhoneIcon sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}/>
+                <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}>
+                
+                <a href="tel:7980636969" target="_blank">7980636969</a></Typography>
+                </Box>
+                <Box sx={{display: "flex", flexDirection: "row",justifyContent:"center ",alignItems:"center",gap:"5px",paddingTop:"20px"}} >
+                <LinkedInIcon sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}/>
+                <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}>
+                
+                <a href="https://www.linkedin.com/in/jit-saha-869201154/" target="_blank">jit-saha-869201154</a></Typography>
+                </Box>
+                <Box sx={{display: "flex", flexDirection: "row",justifyContent:"center ",alignItems:"center",gap:"5px",paddingTop:"20px"}} >
+                <GoogleIcon sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}/>
+                <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}>
+                
+                <a href="https://www.google.com/search?q=jit+saha&oq=jit+saha&aqs=chrome..69i57j0i10i22i30j0i15i22i30j0i390j69i60l2.1642j0j4&sourceid=chrome&ie=UTF-8" target="_blank">Google Account</a></Typography>
+                </Box>
+
+            </Box>
+
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", width: "50%", paddingTop: "40px" }}>
+            <Box sx={{ width: "80%", padding: "20px", }}>
+              <img alt='jit saha' width="100%" height="100%" src={require('../static/assets/images/jit1.jpeg')} />
+            </Box>
+          </Box>
+
+        </Box>
+        <Box sx={{ display: "flex", flexDirection: "row", }}>
+          <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", paddingTop: "20px" }}>
+            <Typography sx={{ fontSize: "2rem", color: "white" }}>Skill Set</Typography>
+          </Box>
+
+
+        </Box>
+        <Box sx={{ display: "flex", flexDirection: "row" }}>
+
+
+          <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "50%", paddingTop: "20px" }}>
+            <Typography sx={{ fontSize: "1.5rem", color: "white" }}>Primary:</Typography>
+            <Box sx={{ display: "flex", flexDirection: "row", padding: "10px", gap: "5px", flexWrap: "wrap" }}>
+              <Chip label="React js" color="primary" variant="filled" />
+              <Chip label="Java Script" color="primary" variant="filled" />
+              <Chip label="TypeScript" color="primary" variant="filled" />
+              <Chip label="Angular" color="primary" variant="filled" />
+              <Chip label="Html" color="primary" variant="filled" />
+              <Chip label="Css" color="primary" variant="filled" />
+            </Box>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "50%", paddingTop: "20px" }}>
+            <Typography sx={{ fontSize: "1.5rem", color: "white" }}>Secondary:</Typography>
+            <Box sx={{ display: "flex", flexDirection: "row", padding: "10px", gap: "5px", flexWrap: "wrap" }}>
+              <Chip label="Node js" color="secondary" variant="filled" />
+              <Chip label="AWS services" color="secondary" variant="filled" />
+              <Chip label="Azure" color="secondary" variant="filled" />
+              <Chip label="Dyanamo Db" color="secondary" variant="filled" />
+              <Chip label="Serverless" color="secondary" variant="filled" />
+              <Chip label="Express" color="secondary" variant="filled" />
+            </Box>
+          </Box>
+        </Box>
+
+
+        <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", paddingTop: "20px" }}>
+          <Typography sx={{ fontSize: "2rem", color: "white" }}>Personal Details</Typography>
+        </Box>
+        <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <SimpleAccordion/>
+          </Box>
+          <Box sx={{display:"flex",flexDirection:"row",width:"100%"}}>
+            <BottomAppBar/>
+
+          </Box>
+    </Container>
+    </React.Fragment >
+  );
+}
