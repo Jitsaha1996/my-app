@@ -3,7 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Chip, Typography } from '@mui/material';
-import { padding } from '@mui/system';
+
 import SimpleAccordion from './SimpleAccordian';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
@@ -28,29 +28,31 @@ export default function ContainerForHome() {
               <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif" }}>
                 Full Stack Developer from India ,Working in TCS .
                 Using React js in Front End and Node js in BackEnd</Typography>
-                <Box sx={{display: "flex", flexDirection: "row",justifyContent:"center ",alignItems:"center",gap:"5px",paddingTop:"20px"}} >
+                <Box sx={{display: "flex", flexDirection: "column",justifyContent:"center ",alignItems:"center" ,paddingLeft:"10px"}}>
+                <Box sx={{display: "flex", flexDirection: "row",justifyContent:"center ",alignItems:"center",gap:"5px",paddingTop:"20px",paddingLeft:"10px"}} >
                 <AttachEmailIcon sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}/>
                 <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}>
                 
-                <a href="mailto:sahajit1996@gmail.com" target="_blank">sahajit1996@gmail.com</a></Typography>
+                <a href="mailto:sahajit1996@gmail.com" target="_blank" rel="noreferrer">sahajit1996@gmail.com</a></Typography>
                 </Box>
                 <Box sx={{display: "flex", flexDirection: "row",justifyContent:"center ",alignItems:"center",gap:"5px",paddingTop:"20px"}} >
                 <LocalPhoneIcon sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}/>
                 <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}>
                 
-                <a href="tel:7980636969" target="_blank">7980636969</a></Typography>
+                <a href="tel:7980636969" target="_blank" rel="noreferrer">7980636969</a></Typography>
                 </Box>
                 <Box sx={{display: "flex", flexDirection: "row",justifyContent:"center ",alignItems:"center",gap:"5px",paddingTop:"20px"}} >
                 <LinkedInIcon sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}/>
                 <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}>
                 
-                <a href="https://www.linkedin.com/in/jit-saha-869201154/" target="_blank">jit-saha-869201154</a></Typography>
+                <a href="https://www.linkedin.com/in/jit-saha-869201154/" rel="noreferrer" target="_blank">jit-saha-869201154</a></Typography>
                 </Box>
                 <Box sx={{display: "flex", flexDirection: "row",justifyContent:"center ",alignItems:"center",gap:"5px",paddingTop:"20px"}} >
                 <GoogleIcon sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}/>
                 <Typography sx={{ fontSize: "1rem", color: "white", fontFamily: "sans-serif"  }}>
                 
-                <a href="https://www.google.com/search?q=jit+saha&oq=jit+saha&aqs=chrome..69i57j0i10i22i30j0i15i22i30j0i390j69i60l2.1642j0j4&sourceid=chrome&ie=UTF-8" target="_blank">Google Account</a></Typography>
+                <a rel="noreferrer" href="https://www.google.com/search?q=jit+saha&oq=jit+saha&aqs=chrome..69i57j0i10i22i30j0i15i22i30j0i390j69i60l2.1642j0j4&sourceid=chrome&ie=UTF-8" target="_blank">Google Account</a></Typography>
+                </Box>
                 </Box>
 
             </Box>

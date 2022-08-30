@@ -1,6 +1,6 @@
 
-import { Box, createTheme, ThemeProvider} from '@mui/material'
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import {  createTheme, ThemeProvider} from '@mui/material'
+import {BrowserRouter} from 'react-router-dom'
 import React from 'react'
 import Header from './Header';
 import { Home } from './Home';
@@ -25,10 +25,11 @@ export const PortfolioProvider = (props:Props) => {
        
            <BrowserRouter>
            <Header/>
-           <Routes>
+           <Home/>
+           {/* <Routes>
            <Route path="/create" element={<Home/>} />
            <Route path="/" element={<Home/>} />
-           </Routes>
+           </Routes> */}
            </BrowserRouter>
 
         
